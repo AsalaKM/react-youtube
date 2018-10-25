@@ -14,7 +14,7 @@ class App extends Component {
     isLoading: true,
     selected: null
     }
- onSearch = ( term= 'Kids') => {
+ onSearch = ( term= 'kids songs') => {
   this.setState({ isLoading: true });
   ytSearch({key: cred, term}, data =>{
   this.setState({ isLoading: false , data,  selected: data[0]})
